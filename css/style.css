@@ -1,0 +1,999 @@
+        /* ----- GLOBAL ----- */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Muli';
+}
+
+/* Fonts til alt tekst på siden */
+
+h1, p{
+    font-family: 'Muli';
+}
+
+/* Alt tekst */
+
+.tekst{
+    margin: 0;
+    padding: 5% 5% 0 5%;
+    text-align: center;
+    line-height: 25px;
+    color: #dae8f7 ;
+}
+
+/* Alle overskrifter */
+
+.overskrift{
+    font-family: 'Muli light';
+    font-weight: 100;
+    margin: 0;
+    padding: 5% 5% 0 5%;
+    text-align: center;
+    line-height: 25px;
+    color: #dae8f7 ;
+    font-size: 20px;
+}
+
+.overskrift1{
+    font-family: 'Muli light';
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+    color: #dae8f7;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+/* Alle sections */
+
+#sec1, #sec2, #sec22, #sec33 #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9{
+    background-color: #7f6650;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Baggrund til alle sections */
+
+#sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9{
+    background-image: url(../images/jord.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Skrald på siden */
+
+.skrald1{
+    width: 20%;
+    position: absolute;
+    left: 4%;
+    top: 8%;
+}
+
+.skrald2{
+    width: 22%;
+    position: absolute;
+    top: 0%;
+    left: 75%;
+}
+
+.skrald3{
+    width: 33%;
+    position: absolute;
+    left: 0%;
+    top: 5%;
+}
+
+.skrald4{
+    width: 17.5%;
+    position: absolute;
+    bottom: -5%;
+    left: 80%;
+    transform: rotate(90deg)
+}
+
+.skrald5{
+    width: 10%;
+    position: absolute;
+    bottom: 35%;
+    left: 84%; 
+    transform: rotate(45deg)
+}
+
+/* Fjernet skrald på mobil */
+
+.skrald6, .skrald7{
+    display: none;
+}
+
+.scrollskrald{
+    display: none;
+}
+
+    /* Skrald der IKKE vises på siden i tablet */
+    
+.skrald10{
+    display: none;
+}
+
+.skraldibyen{
+    display: none;
+}
+
+.klaokskrald{
+    display: none;
+}
+
+#CTAtop{
+    display: none;
+}
+
+        /* --- SECTION 1 BAGGRUND MED BYEN --- */
+
+/* LOGO */
+
+#sec1 #logo{
+    width: 30%;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+
+/* CTA bliv frivillig */
+
+#CTAfrivillig{
+    position: absolute;
+    top: 18%;
+    left: 5.2%;
+    color: #31404f;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+/* SKYER FJERNET FRA MOBIL */
+
+.skyer{
+    display: none;
+}
+
+/* Baggrundsbilleder */
+
+#sec1 .imgbcg1{
+     width:100%;
+}
+
+.imgbcg2{
+    display: none;
+}
+
+        /* --- SECTION 2 INTRO --- */
+
+#sec2{
+    position: relative;
+}
+
+#sec2 h1, #sec2 p{
+    background-color: rgba(0,0,0,0.35);
+    margin: 0 10%;
+}
+
+#sec2 p{
+        padding-bottom: 5%;
+}
+
+#sec22{
+    display: none;
+}
+
+        /* --- SECTION 3 VIDEO --- */
+
+.video1{
+    padding: 5% 0;
+    width: 80%;
+    margin: 0 10%;
+}
+
+        /* --- SECTION 4 KLAOK --- */
+
+#sec4 p{
+    padding: 0 5% 5% 5%;
+}
+
+#sec4 img{
+    width: 100%;
+}
+
+#sec9 #kloakdesktop{
+    display: none;
+}
+
+#vejskilt{
+    display: none;
+}
+
+        /* --- SECTION WASTEHUNT --- */
+
+#sec5{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#wastehuntimg{
+    width: 30%;
+    padding: 2% 15% 2% 15% ;
+    margin: 0 20%;
+}
+
+#sec5 p{
+    width: 50%;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top:-4px ;
+}
+
+#wastehuntimg, #sec5 p{
+    background-color: rgba(0,0,0,0.35);
+}
+
+/* Waste Hunt Facebook */
+
+#sec5 a{
+    text-decoration: none;
+    color: #dae8f7;
+}
+
+        /* --- SECTION CONTENT --- */
+
+#sec7 p{
+    background-color: rgba(0,0,0,0.35);
+    margin: 0 12% 8% 12%;
+    padding-bottom: 5%;
+}
+
+/* Slider fjernes på mobil */
+
+#sec6 .wrap{
+    display: none;
+}
+
+        /* --- SECTION CTA Bliv indsamler --- */
+
+/* CTA Btn */
+
+.btn{
+    width: 40%;
+    margin: 0 30%;
+    padding: 2%;
+    background-color: #31404f;
+    border: 2px solid #31404f;
+    border-radius: 10px;
+
+    z-index: 12;
+    text-align: center;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #dae8f7;
+    text-align: center;
+}
+
+        /* --- SECTION 6 CONTENTBILLEDE --- */
+
+/* Content billede */
+
+#sec6 #contentbillede{
+    width: 70%;
+    margin: 5% 15% 5%;
+    border: 0px #dae8f7 solid;
+    border-radius: 5px;
+}
+
+        /* --- FOOTER --- */
+
+/* Container */
+
+#sec8 #containerfooter{
+    padding: 8% 25% 5% 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container flex */
+
+.sec8flex{
+    width: 20%;
+}
+
+#sec8 .footerimg{
+    width: 100%;
+}
+
+#container1footer, #container2footer{
+    display: none;
+}
+
+              /* --- MEDIE QUERY --- */
+
+        /* --- TABLET --- */
+
+@media screen and (min-width: 768px) {
+    
+                /* ----- GLOBAL ---- */
+    
+/* Z-index på alle elementer på siden */
+
+    #sec22 h1, #sec22 p, #sec33, #sec4 img, #sec5 .secwastehunt, #sec7 p, #sec9 img, #sec9 img{
+        z-index: 10;
+    } 
+    
+    /* Skrald i bunden af byen */
+    
+    .skraldibyen{
+        display: block;
+        position: absolute;
+    }
+    
+    #tyggegummiibyen{
+        width: 10%;
+        top: 34.5%;
+        left: 72%;
+        transform: rotate(2deg);
+    }
+    
+    /* Skrald der scroller på siden */
+    
+    .scrollskrald{
+        z-index: 4;
+        display: block;
+    }
+    
+    /* Kaffe */
+    
+    #scrollskrald1{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 165%;
+        left: 85%;
+        background: url(../images/skrald/kaffe.png) 15% 50% no-repeat;
+        background-size: contain;
+    }
+    
+    /* BURGERKASSE */
+    
+    #scrollskrald2{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 92%;
+        left: 5%;
+        background: url(../images/skrald/gum.png) 15% 50% no-repeat;
+        background-size: contain;
+    }
+    
+    /* BANAN HØJRE NEDE */
+    
+    #scrollskrald3{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 100%;
+        left: 88%;
+        background: url(../images/skrald/banan.png) 15% 50% no-repeat;
+        background-size: contain;
+    }
+    
+        /* FLASKE I VANDET */
+    
+    #scrollskrald4{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 50%;
+        left: 10%;
+        transform: rotate(120deg);
+        background: url(../images/skrald/flaske.png) 15% 50% no-repeat;
+        background-size: contain; 
+    }
+    
+
+        /* Cigaret nede venstre */
+    
+    #scrollskrald5{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 185%;
+        left: 4%;
+        background: url(../images/skrald/burger.png) 15% 50% no-repeat;
+        background-size: contain; 
+    }
+    
+        /* Cigaret nede højre */
+    
+    #scrollskrald6{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 105%;
+        left: 85%;
+        transform: rotate(-160deg);
+        background: url(../images/skrald/cig1.png) 15% 50% no-repeat;
+        background-size: contain;
+    }
+    
+ /* Skrald på siden der IKKE bevæger sig ved scroll */    
+    
+    .skrald1{
+    width: 20%;
+    position: absolute;
+    left: -14%;
+    top: -2%;
+}
+
+.skrald2{
+    width: 18%;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+}
+
+.skrald3{
+    width: 20%;
+    position: absolute;
+    left: 20%;
+    top: -20%;
+    transform: rotate(-15deg);
+}
+
+.skrald4{
+    width: 12.5%;
+    position: absolute;
+    bottom: -12%;
+    left: 70%;
+    transform: rotate(90deg)
+}
+
+.skrald5{
+    width: 4%;
+    position: absolute;
+    bottom: 115%;
+    left: 14%; 
+    transform: rotate(45deg)
+}
+    
+.skrald10{
+    display: block;
+    width: 12%;
+    position: absolute;
+    bottom: 70%;
+    left: 10%;
+    z-index: 3;
+}
+    
+        /* --- SECTION 1 --- */
+    
+    /* Baggrundsbillede af byen */ 
+    
+    .imgbcg1{
+        display: none;
+    }
+    
+    .imgbcg2{
+        display: block;
+        width: 100%;
+    }
+    
+    /* CTA Sky bliv frivllig */
+    
+    #CTAtop{
+        position: absolute;
+        display: block;
+        top: 14% ;
+        left: 4%;
+    }    
+    
+    #CTAtop img{
+        width: 30%;
+    }
+    
+    /* Skyer på baggrunden */
+    
+    .skyer{
+        display: block;
+        position: absolute;
+    }
+    
+    #sky1{
+        z-index: 1;
+        width: 20%;
+        animation: sky1 7s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    #sky2{
+        z-index: 2;
+        width: 15%;
+        animation: sky2 5s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    /* KEYFRAMES til skyerne */
+    
+    @keyframes sky1 {
+        0%   {left: 70%; top: 2%;}
+        50%  {left: 65%; top: 2%;}
+        100% {left: 70%; top: 2%;}
+    }
+
+    @keyframes sky2 {
+        0%   {left: 60%; top: 5%;}
+        50%  {left: 63%; top: 5%;}
+        100% {left: 60%; top: 5%;}
+    }
+    
+    /* BOAT */
+    
+    #boat{
+        z-index: 1;
+        width: 10%;
+        height: auto;
+        animation: båd 5s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    
+        @keyframes båd {
+        0%   {left: 4%; top: 32.5%;}
+        50% {left: 8%; top: 32.5%;}
+        100%  {left: 4%; top: 32.5%;}
+    }
+    
+    
+    /* --- SECTION1 og SECTION2 slået sammen på desktop --- */
+
+    #sec2, #sec3{
+        display: none;
+    }
+    
+    #sec22{
+        width: 50%;
+        position: absolute;
+        z-index:11;
+        top:45%;
+        left: 40%;
+        background: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 15%;
+    }
+    
+    
+    #sec22 h1, #sec22 p{
+        background-color: rgba(0,0,0,0.35);
+        padding-bottom: 5%;
+    }
+    
+    /* CTA bliv frivillig */
+    
+    #CTAfrivillig{
+        top: 13%;
+    }
+    
+    #CTAfrivillig:hover{
+        transform: scale(1.1);
+    }
+    
+    /* -- VIDEO -- */
+    
+    #sec22 .video1{
+        width: 100%;
+        margin: 10% 0 0 0;
+        z-index: 10;
+    }
+    
+    /* FLEXBOX PÅ TEKST OG VIDEO */
+    
+    #sec22 .overskrift, #sec22 .overskrift1{
+        margin: 0;
+        padding: 1% 0;
+        width: 100%;
+        font-size: 120%;
+    }
+    
+    #sec22 p{
+        text-align: justify;
+        font-size: 100%;
+    }
+    
+    #sec1{
+        padding-bottom: 150px;
+    }
+    
+    .sec1tekst{
+        margin: 0 15%;
+    }
+    
+    /* --- SECTION9 .. KLOAK --- */
+    
+    #sec9{
+        padding-bottom: 7%;
+    }
+    
+    #sec4 #kloak{
+        display: none;
+    }
+    
+    #sec9 #kloakdesktop{
+        width: 100%;
+        display: block;
+    }
+    
+    /* CTA vejskilt */
+    
+    #vejskilt{
+        display: block;
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: rotate(4deg);
+    }
+    
+    /* BTN */
+    
+    .btn{
+        display: none;
+    }
+    
+        /* ---- SECTION5 WASTE HUNT ---- */
+    
+    #sec5{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10% 0 0 0;
+    }
+
+    .secwastehunt{
+        width: 20%;
+        height: 200px;
+        margin: 5% 0;
+        padding: 10% 0;
+        background-color: rgba(0,0,0,0.35);
+    }
+    
+    #wastehuntimg{
+        margin: 5% 0;
+        padding: 2%; 
+        width: 200px;
+        height: 200px;
+    }
+    
+    #sec5 p{
+        font-size: 120%;
+        padding: 2% 5%;
+        width: 45%;
+        text-align: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 0;
+    }
+    
+    #sec5 a{
+        font-size: 90%;
+    }
+    
+    #sec5 a:hover{
+        color: #31404f;
+        
+    }
+    
+    /* ---- SECTION 6 SLIDER/CAROUSEL ---- */
+    
+    
+    
+    
+    
+    
+    #contentbillede{
+        display: none;
+    }
+    
+    #sec6 .wrap{
+        display: block;
+    }
+    
+    #sec6 .wrap img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 100;
+      width: 80%;
+      height: 100%;
+        margin-left:10%;
+        margin-right:10%;
+      overflow: hidden;
+    }
+
+    .wrap:after {
+      content:'';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .slider {
+      position: relative;
+      z-index: 200;
+      padding: 0 0px;
+      margin: 5rem auto;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      height: 50px;
+      line-height: 50px;
+      margin-top: -25px;
+      border: none;
+      background: transparent;
+      color: #fff;
+      font-family: monospace;
+      font-size: 5rem;
+      z-index: 300;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: 0px;
+      text-align: left;
+    }
+
+    .slick-next {
+      right: 0px;
+      text-align: right;
+    }
+
+    .item.slick-slide {
+      width: 600px;
+      height: 400px !important;
+      transition: transform .4s;
+      position: relative; 
+    }
+
+    .slick-slide:after {
+      content:'';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.5);
+      transition: transform .4s;
+    }
+
+    .item.slick-slide {
+      transform: scale(0.7)  translate(640px);
+    }
+
+    .item.slick-slide.slick-center + .slick-slide {
+      transform: scale(0.8) translate(-250px);
+      z-index: 10;
+    }
+
+    .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+      transform: scale(0.7)  translate(-640px);
+      z-index: 5;
+    }
+
+    .item.slick-slide.slick-active {
+      transform: scale(0.8) translate(250px);
+    }
+
+    .item.slick-slide.slick-center {
+      transform: scale(1);
+      z-index: 30;
+    }
+
+    .slick-center:after {
+      opacity: 0;
+    }
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /* ---- SECTION 7 ---- */
+    
+    #sec7 .tekst{
+        font-size: 100%;
+        padding:5%; ;
+        background-color: rgba(0, 0, 0, 0.35);
+        margin: 0 15%;
+    }
+    
+    
+    /* ---- FOOTER ---- */
+
+    #maincontainerfooter{
+        border-top: solid 2.5px #31404f;
+    }
+    
+    
+/* Main container */
+    
+    #maincontainerfooter{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+    
+    #container1footer, #container2footer{
+        display: block;
+    }
+    
+    /* Padding på mobilfooter fjernes */
+    
+    #sec8 #containerfooter{
+        padding: 0;
+    }
+    
+    /* De 3 nye sektioner til tablet og desktop */
+    
+    #container1footer{
+        width: 20%;
+    }
+    
+    #container2footer{
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #container2footer .flexfooterp{
+        width: 50%;
+        font-size: 100%;
+        padding: 0 2%;
+        color: #dae8f7;
+        font-weight: 800;
+    }
+    
+    #containerfooter{
+        width: 20%;
+    }
+    
+    /* Aarhus kommunes logo */
+    
+    #container1footer img{
+        width: 30%;
+        padding: 25% 25%;
+        box-sizing: content-box;
+    }
+    
+}
+
+        /* --- DESKTOP --- */
+
+@media screen and (min-width: 1024px) {
+     #sec22{
+         margin-bottom: 0;
+    }
+    
+    /* BOAT */
+    
+        @keyframes båd {
+        0%   {left: 4%; top: 33.5%;}
+        50% {left: 8%; top: 33.5%;}
+        100%  {left: 4%; top: 33.5%;}
+    }
+    
+    /* Skrald i byen */
+    
+        #tyggegummiibyen{
+        top: 36%;
+    }
+    
+    /* CTA top - bliv frivillig */
+    
+        #CTAtop img{
+        width: 45%;
+    }
+    
+    /* Content tekst */
+    
+    #sec7 .tekst{
+        padding: 2%;
+    }
+    
+    /* WASTE HUNT */
+    
+    #sec5{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10% 0 0 0;
+    }
+
+    .secwastehunt{
+        width: 20%;
+        height: 150px;
+        margin: 0 0 5% 0;
+        padding: 0;
+        background-color: rgba(0,0,0,0.35);
+    }
+    
+    #wastehuntimg{
+        margin:0;
+        padding: 5%; 
+        width: 150px;
+        height: 150px;
+    }
+    
+    #sec5 p{
+        font-size: 120%;
+        padding: 5%;
+        width: 25%;
+        text-align: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    } 
+    
+    /* SLIDESHOW / CAROUSEL */
+    
+    .slideimg{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+}
